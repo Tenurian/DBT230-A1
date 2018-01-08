@@ -8,11 +8,8 @@ public class LargeEmployee extends Employee {
 		
 	public LargeEmployee(int id, String firstName, String lastName, int hireYear, byte[] someData) {
 		super(id, firstName, lastName, hireYear);
-		
 		this.someData = someData;
-		
 		new Random().nextBytes(someData);
-	
 	}
 	
 }
